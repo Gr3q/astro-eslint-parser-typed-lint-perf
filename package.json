@@ -1,0 +1,20 @@
+{
+  "name": "astro-eslint-parser-typed-lint-perf",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src",
+    "lint:astro": "eslint \"src/**/*.astro\"",
+    "lint:ts": "eslint \"src/**/*.ts\""
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "8.71.2",
+    "astro": "7.2.0",
+    "astro-eslint-parser": "3.2.0",
+    "eslint": "10.13.0",
+    "eslint-plugin-astro": "3.2.1",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.2"
+  },
+  "packageManager": "pnpm@10.28.2"
+}

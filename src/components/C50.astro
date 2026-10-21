@@ -1,0 +1,20 @@
+---
+import C49 from "./C49.astro";
+import C48 from "./C48.astro";
+import type { Item } from "../types";
+
+interface Props {
+  items: Item[];
+}
+
+const { items } = Astro.props;
+const total = items.reduce((sum, item) => sum + item.value, 0);
+const labels = items.map((item) => item.label.toUpperCase());
+---
+
+<section>
+  <h2>C50: {total}</h2>
+  <p>{labels.join(", ")}</p>
+  <C49 items={items} />
+  <C48 items={items} />
+</section>
